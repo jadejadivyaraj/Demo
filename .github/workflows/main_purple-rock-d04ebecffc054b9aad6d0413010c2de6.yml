@@ -21,6 +21,9 @@ jobs:
         with:
           dotnet-version: '8.x'
 
+      - name: Navigate to root
+        run: cd ./BestBikeApp
+
       - name: Build with dotnet
         run: dotnet build --configuration Release
 
